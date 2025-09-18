@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AgriChain - Supply Chain Transparency</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#46ec13",
+            "background-light": "#f6f8f6",
+            "background-dark": "#142210",
+            "foreground-light": "#111b0d",
+            "foreground-dark": "#eaf3e7",
+            "card-light": "#ffffff",
+            "card-dark": "#1e2f1a",
+            "muted-light": "#5e9a4c",
+            "muted-dark": "#a3d395"
+          },
+          fontFamily: {
+            "display": ["Work Sans", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "0.75rem",
+            "xl": "1rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .icon-glow {
+      box-shadow: 0 0 20px 0px #46ec1340;
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-foreground-light dark:text-foreground-dark">
+<div class="relative min-h-screen w-full">
+<header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex h-20 items-center justify-between">
+<div class="flex items-center gap-3">
+<svg class="h-8 w-8 text-primary" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6_319)">
+<path d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z" fill="currentColor"></path>
+</g>
+<defs>
+<clipPath id="clip0_6_319"><rect fill="white" height="48" width="48"></rect></clipPath>
+</defs>
+</svg>
+<h1 class="text-2xl font-bold text-foreground-light dark:text-foreground-dark">AgriTrace</h1>
+</div>
+<nav class="hidden lg:flex items-center gap-8">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="frammer.html">Farmer</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="retailer.html">Retailer</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Benefits</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="bg-primary text-background-dark font-bold text-sm px-6 py-2.5 rounded-full hover:opacity-90 transition-opacity">
+              <a href="loginpage.html">Get Started</a>
+            </button>
+<button class="lg:hidden p-2 rounded-md hover:bg-primary/20 dark:hover:bg-primary/30">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+<section class="grid lg:grid-cols-2 gap-12 items-center">
+<div class="flex flex-col gap-6 text-center lg:text-left">
+<h1 class="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter leading-tight">
+            Trace Your Food's Journey from <span class="text-primary">Farm to Table</span>
+</h1>
+<p class="text-lg text-muted-light dark:text-muted-dark max-w-xl mx-auto lg:mx-0">
+            AgriTrace provides a transparent and secure platform for tracking agricultural produce, ensuring quality and authenticity throughout the supply chain.
+          </p>
+<div class="flex justify-center lg:justify-start mt-4">
+<button class="bg-primary text-background-dark font-bold text-base px-8 py-4 rounded-full hover:opacity-90 transition-opacity">
+              Explore the Platform
+            </button>
+</div>
+</div>
+<div class="w-full h-auto aspect-[4/3] rounded-xl bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBdb4G2hEkgBKgO6KAYiBmjYzuhg1DqeW5_nNRvD4JFBMkXJeUvuRX104x7uGMcc5dmZYVdDa7FyrspoJsT-d2_PGNzdMpPITmXRGrYBmK1TdQdxg1JEl8W29bII6KnwcOBa15f0rS5SIaDWpSZGZv_68DvQnLro588VyB472LYDAGxDY5Acu-GKoQNSk_hS_T1vOTvhcs2tOITqdX51DBSvlTrZGGOxLRpRfL3iP6A4DKn8XJuVAPcjcSeHm61x3XqB_6gbc9R1PZO");'>
+</div>
+</section>
+<section class="py-24 sm:py-32">
+<div class="text-center mb-12">
+<h2 class="text-3xl sm:text-4xl font-bold tracking-tight">Key Features</h2>
+<p class="mt-4 text-lg text-muted-light dark:text-muted-dark">Everything you need for a transparent supply chain.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
+<div class="flex flex-col items-center text-center gap-4 p-6 bg-card-light dark:bg-card-dark rounded-lg">
+<div class="w-full aspect-square rounded-lg bg-cover bg-center mb-2" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAn8QxoEUIhwaZcdD4RmkFRzA2SZvuZ4eJjA7UipKX7qTwUA5ifXFeuf6Q4R6b0E6hCWlGgQBl64tlaMLIWiA6ruQcPct-NpZLd_-WNb_PCmPgoZKADS-wawpDLX8AJeqTGNNvEU7sWFgtxkFWfrW_W4FYtOiOiRL30wBq_-OWUe8RZO0NivUZPnlWAiC5TsKHudFNlqkkwpSwjVdDC2vs67qww894JrPnBV1icPd7e4jnXXJ9cH3sS1JtEKL4p2MOhcNnjeXZ4h6n3");'></div>
+<h3 class="font-bold text-lg">Offline App</h3>
+<p class="text-sm text-muted-light dark:text-muted-dark">Manage your supply chain even without an internet connection.</p>
+</div>
+<div class="flex flex-col items-center text-center gap-4 p-6 bg-card-light dark:bg-card-dark rounded-lg">
+<div class="w-full aspect-square rounded-lg bg-cover bg-center mb-2" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDQgWPA700xFNPMkbGX2qf7vG4IeCllGihnCtqYWjT3SGcal0bjw-QttOH1A7aoNwPXk8VanQ9N6CTHQ2-T41zETs-wzJ3cJuLymDvuaWQuq-zshFFimvd-ViMf1Cuh-dAmLTFPkMh9DeLcMozDXcriLQotoS6viiuwRbdJpF0CXPjJqAIdttHQ_tFROeI23RNzdA7iVQ7zYiYnNGSjb9hmFJrsz6WgYMSbfddRaVjZRmJ3vfk-jrU7ngMPgKAG1FxFt7QZ_oFpiXtJ");'></div>
+<h3 class="font-bold text-lg">IoT Sensors</h3>
+<p class="text-sm text-muted-light dark:text-muted-dark">Real-time monitoring of produce conditions with IoT sensors.</p>
+</div>
+<div class="flex flex-col items-center text-center gap-4 p-6 bg-card-light dark:bg-card-dark rounded-lg">
+<div class="w-full aspect-square rounded-lg bg-cover bg-center mb-2" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBncNvH5kuWOplm8akNNcyq9mGczAR5_9BPfxsB-3w6M4c8kJTBAZ-LN9CO6h-VkoxGnjBWX8D8KjDDRUpQA670T1xqCO1BYIl3gAHB43lI0OGPeIS-koi4n-NdzsSlbzOXHFIjsTLQDoidwrDnnpK50gggaurttrXs8a4guGRyjFttvV9-WAjr9Kd1ipOxSwVWwlSAY6kJ1oB2f7E5Wl6QB5BwIak-dTUEZ0ze_ak4qvyKhGHN3-9QuoAtfs93_5d5DX_wlrNpQSxW");'></div>
+<h3 class="font-bold text-lg">Blockchain Record-Keeping</h3>
+<p class="text-sm text-muted-light dark:text-muted-dark">Immutable and transparent record-keeping on the blockchain.</p>
+</div>
+<div class="flex flex-col items-center text-center gap-4 p-6 bg-card-light dark:bg-card-dark rounded-lg">
+<div class="w-full aspect-square rounded-lg bg-cover bg-center mb-2" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB3EWokgw5HzrbbGc6gJwgNJiSL67dctUeeuNiM--sUkk6f8gfG_fp94PlbDUv8oLNyagXtsxUMkZCDJvNRsxiGCdJQO9s-7jjLZuqUVE0vDX4i-Zmo-zXKR54sRlrk9R2GEge2CU7HXAHj8uhTzJImi_fGgW4FK1dztBZbccGiothwdarFk_tbBfgYuD66bp9KpBJ-eie0zDheOH0B7GC8qEaKIkC0JGcmqSkZAMlsRzUXxO5EFNqpOMJ1A5D30RNqgGpkmUoqIRij");'></div>
+<h3 class="font-bold text-lg">QR Code Generation</h3>
+<p class="text-sm text-muted-light dark:text-muted-dark">Generate QR codes for easy product tracking and verification.</p>
+</div>
+<div class="flex flex-col items-center text-center gap-4 p-6 bg-card-light dark:bg-card-dark rounded-lg">
+<div class="w-full aspect-square rounded-lg bg-cover bg-center mb-2" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuABPbyjx_a0rNqYbyMo_ItKYJtdv_xQNdW8CJLcVYHILAIgDNpgJ93n0mf1NJ3wHkhaqqcaFs8w7c3LpUGcy6pWEUhbmLexRwfiwKsF3hx49tLmbcOJ1Ev0AnnZ1WQh5MNxusvAPNBtDKetxASsT2nVl01We0pcmzmMuA_h5UecPREbe6ix8fRL8UggdU1WGTiVgAf1lVcPHZGaGhhSsPj6pkLiz5wOoYenbBQ0nfqankL-putDEJnxUbtMPpNmq0vqSH3JOKe4h0eI");'></div>
+<h3 class="font-bold text-lg">Direct UPI Payments</h3>
+<p class="text-sm text-muted-light dark:text-muted-dark">Facilitate direct payments to farmers through UPI.</p>
+</div>
+</div>
+</section>
+<section class="py-24 sm:py-32">
+<div class="text-center mb-12">
+<h2 class="text-3xl sm:text-4xl font-bold tracking-tight">Our Benefits</h2>
+<p class="mt-4 text-lg text-muted-light dark:text-muted-dark">Creating value for everyone in the supply chain.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="bg-card-light dark:bg-card-dark p-8 rounded-xl shadow-lg hover:shadow-primary/20 dark:hover:shadow-primary/20 transition-shadow duration-300">
+<div class="w-full aspect-video rounded-lg bg-cover bg-center mb-4" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBsTSCgr2qoxvFeWKtM43xTPli0YDlZ9RM5ZF2uF0fJ_3pYu_X0SPT6vdwQ_4engjYRTwSo0TNiaiMOehoIDqHnRFMKhvfiOobIu4UtOq1MQfeV3UKySwZ287q4uTdd7fF1YAwX1Qp4vxjzTLOz6XKugj9b9RgxZOaOBfqwFH7ng5qs0JoKCFlrZpyjmMuVGwN4tILqcYeNbjV-ljt2uFyBnxkrD7OWB83MEAiQho_Dzj6v-dS_WzhdJGGN1vTCV2GBAMX_AOG0qtEW");'></div>
+<h3 class="text-xl font-bold mb-2">Reduced Wastage</h3>
+<p class="text-muted-light dark:text-muted-dark">Minimize post-harvest losses through efficient tracking and management.</p>
+</div>
+<div class="bg-card-light dark:bg-card-dark p-8 rounded-xl shadow-lg hover:shadow-primary/20 dark:hover:shadow-primary/20 transition-shadow duration-300">
+<div class="w-full aspect-video rounded-lg bg-cover bg-center mb-4" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBJfxsfUUdkXEri6Zx_xIIjqiHF3IdApPjav6e0UchTRCEKpvZpvuolXpV3IYREU-AO6eFIzkJSiwXIpdXJVEi72BmECYHZPgoWhSFNNldxUxmYY4gkzIfsFp2N3yo5F65iXbZOvG_pBEam_6CJfw1U5fz31BepN3xxJqj3Kza8LhGuG8ojjeel0C7jaJpxMbgwkYX5rZoR8Fd7sNy8eg5l-Q39yWzRSbK2s2p4y3eK0lUUg1l9ToQEXzK3xZhUL5rkb1iebIK3LV_0");'></div>
+<h3 class="text-xl font-bold mb-2">Farmer Empowerment</h3>
+<p class="text-muted-light dark:text-muted-dark">Empower farmers with fair pricing and direct access to markets.</p>
+</div>
+<div class="bg-card-light dark:bg-card-dark p-8 rounded-xl shadow-lg hover:shadow-primary/20 dark:hover:shadow-primary/20 transition-shadow duration-300">
+<div class="w-full aspect-video rounded-lg bg-cover bg-center mb-4" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA9u-0l_mFu7IzBKyeMnRA-C4tCTt6m9v39hr9FajNkzYR9d2eJkVyWw6uuJ4zChtu4_nducnMgcJToZ82wiwvNjcUPa8kXfF5p0fe6ah6v42xhYYua5D-PIBmIeGqRrrJre86l8FZ7PvCQ5vHQkMZLgOOR5-Q3YT4idHGj53Wx2U1u5QQ_d2Rc43tYjVg4dOzOj8pJYN1M3NgZg_IYSRmKrEVwxxReOkCb9zcQgPf3GAgk2za-rk8QMMAzDLRnMGKIj_6nyT7yc8ZY");'></div>
+<h3 class="text-xl font-bold mb-2">Transparent Supply Chain</h3>
+<p class="text-muted-light dark:text-muted-dark">Gain complete visibility into the origin and journey of your produce.</p>
+</div>
+<div class="bg-card-light dark:bg-card-dark p-8 rounded-xl shadow-lg hover:shadow-primary/20 dark:hover:shadow-primary/20 transition-shadow duration-300">
+<div class="w-full aspect-video rounded-lg bg-cover bg-center mb-4" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDYXrfNDs7uhuoJw1EBhos0STi2G1Zx7MhcZ1ICxX984tbF8l2X5xXyK4Ga1VjFVcHe4NRp37nBUCIOi0STqzEA_ptBzR0Ajp2diOv3hu2UsZj4Bft8X2lPeDhzNC8umihyzU8RC_lFKagVowafLEV9n12M7Nan799pFpzBIs421JWTAfJPp0hi6FalQ7ia9FV2Lw_kj3wxiMzwAtQHcnfrDoAQ7gm7RTA63QYQZzyaAJEcObtCOXxWB3bDGAM6aUezIKvO1GZAPTk0");'></div>
+<h3 class="text-xl font-bold mb-2">Trust for Consumers</h3>
+<p class="text-muted-light dark:text-muted-dark">Build consumer trust with verifiable product information.</p>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-card-light dark:bg-card-dark border-t border-primary/20 dark:border-primary/30">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="text-sm text-muted-light dark:text-muted-dark">© 2024 AgriChain. All rights reserved.</p>
+<div class="flex items-center gap-6">
+<a class="text-sm text-muted-light dark:text-muted-dark hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="text-sm text-muted-light dark:text-muted-dark hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="text-sm text-muted-light dark:text-muted-dark hover:text-primary transition-colors" href="#">Contact Us</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+
+</body></html>

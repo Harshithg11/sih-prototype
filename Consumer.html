@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AgriTrace - Supply Chain Transparency</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#46ec13",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#142210",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#142210] dark:text-[#f6f8f6]">
+<div class="flex flex-col min-h-screen">
+<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="container mx-auto px-6 py-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<svg class="text-primary" fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M22 2H15.3333V8.66667H8.66667V15.3333H2V22H22V2Z" fill="currentColor"></path>
+</svg>
+<h1 class="text-xl font-bold tracking-tighter">AgriTrace</h1>
+</div>
+<nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+<a class="hover:text-primary transition-colors" href="#">Home</a>
+<a class="hover:text-primary transition-colors" href="#">Products</a>
+<a class="hover:text-primary transition-colors" href="#">About Us</a>
+<a class="hover:text-primary transition-colors" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="p-2 rounded-full hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button class="p-2 rounded-full hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+<span class="material-symbols-outlined">shopping_cart</span>
+</button>
+<div class="w-10 h-10 rounded-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDlOJDO_v1fMgeYIJBh4IIo0-ZY98Dbot_2UZ_2wnJSYSY1CHimQDDaeZX-dmhZi5dRC6_LSOcb-wC5kz3f07GUdxnpGrsy8fELJesJndmlgA0g985v-cFM3pQ5CMODfC4IcDbTWrxjTf346uwdLjDe9jorxrYZacOCiAt1GRci08pXp0amPr0O59GDt2MKeg8c12Yq9XImiX-cCUwjd5zxlwIPsD2SVitOz6eEQkP-UBHia5BJQr_2rcQVg7YPVwBb2ELS8V58t0m2');"></div>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-grow container mx-auto px-6 py-12 flex flex-col items-center">
+<div class="w-full max-w-lg text-center">
+<h2 class="text-4xl font-bold tracking-tight mb-4">Trace Your Produce</h2>
+<p class="text-lg text-[#142210]/80 dark:text-[#f6f8f6]/80 mb-8">Scan the QR code on your product to view its journey from farm to table.</p>
+<div class="bg-background-light dark:bg-background-dark/50 p-8 rounded-xl shadow-lg border border-primary/20">
+<div class="relative w-full max-w-xs mx-auto aspect-square rounded-lg overflow-hidden mb-6 border-4 border-dashed border-primary/30 flex items-center justify-center">
+<img alt="QR Code Scanner View" class="absolute inset-0 w-full h-full object-cover opacity-30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkDhNNkbapcZnQhei-cST61lxERLs_L0uKqtLkFsle2C3CSlQSPflxuun_G6peDU5_MrD9eoTH8NeM-_ywwAbQ8wlBqTo9U4cmP11mFPLv2UG1gC_n0FoJ5G5MYjTUVrvl0pTFLfVpiX4fsd_CIWiLZVo7B20BTJxDgcTqN7TdF_S9rX3RBDZZDCxO7EjByoO3WuaMMkcMjk_mcrZcvEnvJUgNkcJrt0WdIGtROI36P_TpHydzh4_sryFRbDK1IWFy5730KPFXSChJ"/>
+<span class="material-symbols-outlined text-8xl text-primary/50">qr_code_scanner</span>
+</div>
+<div class="mb-6">
+<h3 class="text-xl font-bold">Point your camera at the QR code</h3>
+<p class="text-sm text-[#142210]/70 dark:text-[#f6f8f6]/70 mt-1">Product details will appear automatically.</p>
+</div>
+<button class="bg-primary text-background-dark font-bold py-3 px-8 rounded-lg w-full hover:opacity-90 transition-opacity">
+                        Open Camera
+                    </button>
+<p class="mt-4 text-sm">
+                        or <a class="text-primary font-semibold hover:underline" href="#">enter code manually</a>
+</p>
+</div>
+
+<!-- ✅ New Buying Section -->
+<div class="mt-16 w-full max-w-2xl text-center">
+  <h3 class="text-3xl font-bold mb-6">Buy Fresh Produce</h3>
+  <div class="grid md:grid-cols-3 gap-6">
+    
+    <!-- Product Card 1 -->
+    <div class="bg-white dark:bg-background-dark/50 p-6 rounded-xl shadow-lg border border-primary/20">
+      <h4 class="font-bold text-lg">Tomatoes</h4>
+      <p class="text-sm text-gray-600 dark:text-gray-300">₹40 / kg</p>
+      <button class="mt-4 bg-primary text-background-dark font-semibold py-2 px-4 rounded-lg w-full hover:opacity-90">
+        Buy Now
+      </button>
+    </div>
+
+    <!-- Product Card 2 -->
+    <div class="bg-white dark:bg-background-dark/50 p-6 rounded-xl shadow-lg border border-primary/20">
+      <h4 class="font-bold text-lg">Onions</h4>
+      <p class="text-sm text-gray-600 dark:text-gray-300">₹30 / kg</p>
+      <button class="mt-4 bg-primary text-background-dark font-semibold py-2 px-4 rounded-lg w-full hover:opacity-90">
+        Buy Now
+      </button>
+    </div>
+
+    <!-- Product Card 3 -->
+    <div class="bg-white dark:bg-background-dark/50 p-6 rounded-xl shadow-lg border border-primary/20">
+      <h4 class="font-bold text-lg">Potatoes</h4>
+      <p class="text-sm text-gray-600 dark:text-gray-300">₹25 / kg</p>
+      <button class="mt-4 bg-primary text-background-dark font-semibold py-2 px-4 rounded-lg w-full hover:opacity-90">
+        Buy Now
+      </button>
+    </div>
+
+  </div>
+</div>
+<!-- ✅ End Buying Section -->
+
+<div class="mt-12">
+<h3 class="text-2xl font-bold mb-4">Why AgriTrace?</h3>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="flex flex-col items-center">
+<div class="bg-primary/20 rounded-full p-4 mb-3">
+<span class="material-symbols-outlined text-primary text-3xl">spa</span>
+</div>
+<h4 class="font-bold">Guaranteed Freshness</h4>
+<p class="text-sm text-[#142210]/70 dark:text-[#f6f8f6]/70">Verify the harvest date and storage conditions.</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="bg-primary/20 rounded-full p-4 mb-3">
+<span class="material-symbols-outlined text-primary text-3xl">payments</span>
+</div>
+<h4 class="font-bold">Direct UPI Payments</h4>
+<p class="text-sm text-[#142210]/70 dark:text-[#f6f8f6]/70">Pay farmers directly, ensuring fair prices.</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="bg-primary/20 rounded-full p-4 mb-3">
+<span class="material-symbols-outlined text-primary text-3xl">verified</span>
+</div>
+<h4 class="font-bold">Full Transparency</h4>
+<p class="text-sm text-[#142210]/70 dark:text-[#f6f8f6]/70">Track your food's entire journey on the blockchain.</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+
+</body>
+</html>

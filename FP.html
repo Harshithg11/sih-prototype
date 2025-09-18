@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrustChain: Blockchain Agri-Supply</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fc;
+            color: #1a202c;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        .hero-bg {
+            background-image: linear-gradient(to bottom right, #4CAF50, #8BC34A);
+        }
+        .card {
+            background-color: white;
+            border-radius: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+        .spinner {
+            border: 4px solid rgba(0, 0, 0, 0.1);
+            border-left-color: #4CAF50;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header class="flex justify-between items-center py-4">
+            <h1 class="text-xl font-bold text-gray-800">TrustChain</h1>
+            <div class="flex space-x-4">
+                <a href="#" class="text-gray-600 hover:text-green-600 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.183 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                </a>
+                <button class="text-gray-600 hover:text-green-600 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero-bg text-white rounded-3xl p-6 md:p-8 text-center my-6 shadow-lg">
+            <h2 class="text-3xl sm:text-4xl font-extrabold leading-tight">From Farm to Your Plate, With Trust.</h2>
+            <p class="mt-4 text-sm sm:text-base font-medium opacity-90">Our blockchain platform solves the trust gap in the agricultural supply chain, ensuring you get fresh, verifiable produce.</p>
+            <div class="mt-8 flex justify-center">
+                <div class="w-full max-w-[200px] h-[150px] bg-green-200 rounded-2xl flex items-center justify-center p-4">
+                    <span class="text-green-800 text-sm font-semibold text-center">A graphic showing a clear, traceable path from farm to a shopping bag.</span>
+                </div>
+            </div>
+            <button class="mt-8 px-8 py-4 bg-white text-green-700 font-bold rounded-full shadow-lg transition-transform transform hover:scale-105">
+                Download App
+            </button>
+        </section>
+
+        <!-- Value Proposition / Features -->
+        <section class="my-10">
+            <h3 class="text-2xl font-bold text-center mb-6">Our Platform's Unique Advantages</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <!-- Feature 1 -->
+                <div class="card p-6 flex items-start space-x-4">
+                    <div class="flex-shrink-0 bg-green-100 text-green-600 p-3 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18.5a.5.5 0 100-1 4 4 0 01-4-4 4 4 0 014-4 4 4 0 014 4 4 4 0 01-4 4zM21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-lg">Farmer-First Tech</h4>
+                        <p class="text-sm text-gray-600 mt-1">Our app works offline and in multiple languages, including voice support, to ensure every farmer can participate.</p>
+                    </div>
+                </div>
+                <!-- Feature 2 -->
+                <div class="card p-6 flex items-start space-x-4">
+                    <div class="flex-shrink-0 bg-green-100 text-green-600 p-3 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-lg">Real-Time Freshness</h4>
+                        <p class="text-sm text-gray-600 mt-1">Low-cost IoT sensors track temperature and humidity to reduce food spoilage and guarantee quality.</p>
+                    </div>
+                </div>
+                <!-- Feature 3 -->
+                <div class="card p-6 flex items-start space-x-4">
+                    <div class="flex-shrink-0 bg-green-100 text-green-600 p-3 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 6v14M6 13h14" />
+                        </svg>
+                    </svg>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-lg">Effortless Verification</h4>
+                        <p class="text-sm text-gray-600 mt-1">Simply scan the QR code on your produce to instantly see its complete journey from farm to store.</p>
+                    </div>
+                </div>
+                <!-- Feature 4 -->
+                <div class="card p-6 flex items-start space-x-4">
+                    <div class="flex-shrink-0 bg-green-100 text-green-600 p-3 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2a2 2 0 01-2-2h-2m-3 0a2 2 0 012-2h2m-2-2a2 2 0 012-2h2m-2-2a2 2 0 012-2h2m-2-2a2 2 0 012-2h2" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-lg">Fair & Instant Pay</h4>
+                        <p class="text-sm text-gray-600 mt-1">Direct UPI payments ensure farmers receive instant, fair payment for their hard work, every time.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Join Our Network -->
+        <section class="my-10">
+            <h3 class="text-2xl font-bold text-center mb-6">Join Our Network</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                <!-- Farmer Card -->
+                <div class="card p-6 text-center transition-transform transform hover:scale-105">
+                    <div class="flex justify-center mb-4 text-green-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                            <path d="M12 14v7a1 1 0 001 1h4a1 1 0 001-1v-7m-6 0v7a1 1 0 001 1h4a1 1 0 001-1v-7" />
+                            <path d="M12 13a4 4 0 100-8 4 4 0 000 8z" />
+                        </svg>
+                    </div>
+                    <h4 class="font-semibold text-lg">Farmers</h4>
+                    <p class="text-sm text-gray-600 mt-1">Gain control of your supply chain and receive instant payments.</p>
+                    <a href="#" class="mt-3 inline-block text-green-600 font-bold hover:underline">Get Started &rarr;</a>
+                </div>
+                <!-- Retailer Card -->
+                <div class="card p-6 text-center transition-transform transform hover:scale-105">
+                    <div class="flex justify-center mb-4 text-green-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5h-2m2 0a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M17 17h.01" />
+                        </svg>
+                    </div>
+                    <h4 class="font-semibold text-lg">Retailers</h4>
+                    <p class="text-sm text-gray-600 mt-1">Access verified, high-quality produce with full traceability.</p>
+                    <a href="#" class="mt-3 inline-block text-green-600 font-bold hover:underline" onclick="toggleRetailerTools(event)">Learn More &rarr;</a>
+                    <!-- Gemini Feature for Retailers -->
+                    <div id="retailer-tools" class="mt-4 hidden">
+                        <textarea id="retailer-input" class="w-full h-24 p-2 text-sm text-gray-700 border rounded-lg focus:outline-none focus:ring focus:ring-green-500" placeholder="Enter product details (e.g., 'Organic carrots, grown in Nashik, naturally sweet')."></textarea>
+                        <button id="retailer-button" class="mt-2 px-4 py-2 text-white bg-green-600 rounded-lg shadow-md hover:bg-green-700 transition-colors">
+                            Generate Product Description ✨
+                        </button>
+                        <div id="retailer-output" class="mt-4 p-3 bg-green-50 text-green-800 rounded-lg text-sm text-left"></div>
+                    </div>
+                </div>
+                <!-- Consumer Card -->
+                <div class="card p-6 text-center transition-transform transform hover:scale-105">
+                    <div class="flex justify-center mb-4 text-green-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                        </svg>
+                    </div>
+                    <h4 class="font-semibold text-lg">Consumers</h4>
+                    <p class="text-sm text-gray-600 mt-1">Scan a QR code to ensure your food is fresh and trustworthy.</p>
+                    <a href="#" class="mt-3 inline-block text-green-600 font-bold hover:underline" onclick="toggleConsumerTools(event)">Scan Now &rarr;</a>
+                    <!-- Gemini Feature for Consumers -->
+                    <div id="consumer-tools" class="mt-4 hidden">
+                        <h5 class="font-semibold text-md mb-2">Want a Recipe?</h5>
+                        <button id="consumer-button" class="mt-2 px-4 py-2 text-white bg-green-600 rounded-lg shadow-md hover:bg-green-700 transition-colors">
+                            Generate Recipe ✨
+                        </button>
+                        <div id="consumer-output" class="mt-4 p-3 bg-green-50 text-green-800 rounded-lg text-sm text-left"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Proof -->
+        <section class="card p-6 my-10 text-center">
+            <h3 class="text-2xl font-bold mb-4">Empowering Farmers, Earning Your Trust.</h3>
+            <p class="italic text-gray-600">"This app gives me peace of mind. I know exactly where my food comes from and that my payment is fair and instant."</p>
+            <p class="mt-4 font-semibold text-gray-800">- A Happy Farmer</p>
+        </section>
+
+        <!-- Content Showcase -->
+        <section class="my-10">
+            <h3 class="text-2xl font-bold text-center mb-6">See How It Works</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="card p-4 text-center">
+                    <img src="https://placehold.co/200x200/e0f2fe/075985?text=Farmer+App" alt="Farmer App Screen" class="mx-auto rounded-lg">
+                    <h4 class="mt-3 font-semibold text-lg">On the Farm</h4>
+                    <p class="text-sm text-gray-600 mt-1">Create a new batch and enter details like type and weight.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="card p-4 text-center">
+                    <img src="https://placehold.co/200x200/e0f2fe/075985?text=Consumer+Scan" alt="Consumer Scanning QR Code" class="mx-auto rounded-lg">
+                    <h4 class="mt-3 font-semibold text-lg">At the Store</h4>
+                    <p class="text-sm text-gray-600 mt-1">Scan the QR code on the produce to verify its origin.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="card p-4 text-center">
+                    <img src="https://placehold.co/200x200/e0f2fe/075985?text=Data+Timeline" alt="Data Transparency Timeline" class="mx-auto rounded-lg">
+                    <h4 class="mt-3 font-semibold text-lg">Complete Transparency</h4>
+                    <p class="text-sm text-gray-600 mt-1">View the full journey and data log, protected by blockchain.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="hero-bg text-white rounded-3xl p-6 md:p-8 text-center my-6 shadow-lg">
+            <h3 class="text-2xl sm:text-3xl font-bold leading-tight">Ready for a Fairer Food System?</h3>
+            <p class="mt-4 text-sm sm:text-base font-medium opacity-90">Join us in creating a transparent, trustworthy, and efficient supply chain for everyone.</p>
+            <button class="mt-8 px-8 py-4 bg-white text-green-700 font-bold rounded-full shadow-lg transition-transform transform hover:scale-105">
+                Download the App
+            </button>
+        </section>
+
+        <!-- Footer -->
+        <footer class="py-6 text-center text-gray-600 text-sm">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="#" class="hover:text-green-600 transition-colors">About Us</a>
+                <a href="#" class="hover:text-green-600 transition-colors">Contact</a>
+                <a href="#" class="hover:text-green-600 transition-colors">How It Works</a>
+            </div>
+            <div class="flex justify-center space-x-4 mb-4">
+                <a href="#" aria-label="Facebook" class="text-gray-500 hover:text-green-600 transition-colors">
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c-.808 0-1.603.078-2.385.234a9.924 9.924 0 00-6.702 1.343A9.924 9.924 0 00.354 13.921c-.242 1.353-.356 2.721-.354 4.1a1.272 1.272 0 001.272 1.272h4.743c.797 0 1.442-.645 1.442-1.442V17.06c0-.528.428-.956.956-.956h2.296c.528 0 .956.428.956.956v3.125a1.272 1.272 0 001.272 1.272h4.743c.797 0 1.442-.645 1.442-1.442v-3.125a1.272 1.272 0 001.272-1.272V12c0-5.46-4.44-9.9-9.9-9.9zm.63 17.68c-.628 0-1.137-.509-1.137-1.137V16.3c0-.628.509-1.137 1.137-1.137h2.296c.628 0 1.137.509 1.137 1.137v1.243c0 .628-.509 1.137-1.137 1.137H12.63zm-4.47-5.908v-1.243c0-.628.509-1.137 1.137-1.137h2.296c.628 0 1.137.509 1.137 1.137v1.243c0 .628-.509 1.137-1.137 1.137h-2.296c-.628 0-1.137-.509-1.137-1.137zm-2.274-5.908v-1.243c0-.628.509-1.137 1.137-1.137h2.296c.628 0 1.137.509 1.137 1.137v1.243c0 .628-.509 1.137-1.137 1.137h-2.296c-.628 0-1.137-.509-1.137-1.137z"/></svg>
+                </a>
+                <a href="#" aria-label="Twitter" class="text-gray-500 hover:text-green-600 transition-colors">
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557a9.854 9.854 0 01-2.828.775 4.922 4.922 0 002.167-2.723 9.854 9.854 0 01-3.132 1.192 4.922 4.922 0 00-8.384 4.498 13.935 13.935 0 01-10.166-5.158 4.922 4.922 0 001.522 6.578 4.922 4.922 0 01-2.227-.615v.062a4.922 4.922 0 003.945 4.827 4.995 4.995 0 01-2.227.086 4.922 4.922 0 004.58 3.419 9.894 9.894 0 01-6.126 2.128A9.854 9.854 0 010 21.685a13.992 13.992 0 007.548 2.219c9.056 0 14.015-7.496 14.015-13.996 0-.214-.005-.427-.015-.639A10.094 10.094 0 0024 4.557z"/></svg>
+                </a>
+                <a href="#" aria-label="LinkedIn" class="text-gray-500 hover:text-green-600 transition-colors">
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.765s.784-1.765 1.75-1.765 1.75.79 1.75 1.765-.783 1.765-1.75 1.765zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.616 7 2.479v6.756z"/></svg>
+                </a>
+            </div>
+            <p>&copy; 2024 Team_Learners. All Rights Reserved.</p>
+            <p class="mt-1"><a href="#" class="hover:text-green-600 transition-colors">Privacy Policy</a></p>
+        </footer>
+
+    </div>
+    <script>
+        // API key will be provided by the environment
+        const apiKey = ""; 
+
+        // Toggles the visibility of the Gemini features
+        function toggleRetailerTools(event) {
+            event.preventDefault();
+            const tools = document.getElementById('retailer-tools');
+            tools.classList.toggle('hidden');
+        }
+
+        function toggleConsumerTools(event) {
+            event.preventDefault();
+            const tools = document.getElementById('consumer-tools');
+            tools.classList.toggle('hidden');
+        }
+
+        // Handle Retailer functionality
+        document.getElementById('retailer-button').addEventListener('click', async () => {
+            const input = document.getElementById('retailer-input').value;
+            const outputDiv = document.getElementById('retailer-output');
+            
+            if (input.trim() === '') {
+                outputDiv.innerText = 'Please enter product details.';
+                return;
+            }
+
+            outputDiv.innerHTML = '<div class="flex items-center justify-center"><div class="spinner"></div></div>';
+            
+            try {
+                const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        contents: [{
+                            parts: [{
+                                text: `Act as a professional copywriter for an organic food retailer. Write a concise and engaging product description based on the following details: "${input}". Focus on the benefits of freshness and quality.`
+                            }]
+                        }]
+                    })
+                });
+
+                if (!response.ok) {
+                    throw new Error(`API call failed with status: ${response.status}`);
+                }
+
+                const result = await response.json();
+                const text = result?.candidates?.[0]?.content?.parts?.[0]?.text || "Could not generate description.";
+                outputDiv.innerText = text;
+
+            } catch (error) {
+                console.error("Error generating product description:", error);
+                outputDiv.innerText = 'Error generating description. Please try again later.';
+            }
+        });
+
+        // Handle Consumer functionality
+        document.getElementById('consumer-button').addEventListener('click', async () => {
+            const outputDiv = document.getElementById('consumer-output');
+            const produceItem = "Organic heirloom tomatoes";
+            
+            outputDiv.innerHTML = '<div class="flex items-center justify-center"><div class="spinner"></div></div>';
+            
+            try {
+                const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        contents: [{
+                            parts: [{
+                                text: `Generate a simple, delicious recipe that uses ${produceItem} as a primary ingredient. The recipe should be easy to follow and suitable for a home cook.`
+                            }]
+                        }]
+                    })
+                });
+
+                if (!response.ok) {
+                    throw new Error(`API call failed with status: ${response.status}`);
+                }
+
+                const result = await response.json();
+                const text = result?.candidates?.[0]?.content?.parts?.[0]?.text || "Could not generate recipe.";
+                outputDiv.innerText = text;
+
+            } catch (error) {
+                console.error("Error generating recipe:", error);
+                outputDiv.innerText = 'Error generating recipe. Please try again later.';
+            }
+        });
+    </script>
+</body>
+</html>
